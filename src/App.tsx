@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import { getUserInfo } from "./api/api";
+import Form from "./components/Form";
 function App() {
 	const handleSubmit = (event: React.FormEvent) => {
 		event.preventDefault();
@@ -10,10 +11,11 @@ function App() {
 
 	return (
 		<>
-			<form onSubmit={handleSubmit}>
+			<Form />
+			{/* <form onSubmit={handleSubmit}>
 				<input type="text" />
 				<button type="submit"></button>
-			</form>
+			</form> */}
 		</>
 	);
 }
